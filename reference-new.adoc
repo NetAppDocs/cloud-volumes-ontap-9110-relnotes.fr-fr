@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.11.0 inclut une nouvelle amélioration.
 [role="lead"]
 Cloud Volumes ONTAP 9.11.0 inclut une nouvelle amélioration.
 
-D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations.
 
 
 
@@ -32,9 +32,9 @@ Reportez-vous à la section link:https://mysupport.netapp.com/info/communication
 
 == Prise en charge d'Elastic volumes (7 juin 2022)
 
-La prise en charge d'Amazon EBS Elastic volumes via un agrégat Cloud Volumes ONTAP améliore les performances et la capacité, tout en permettant à Cloud Manager d'augmenter automatiquement la capacité sous-jacente du disque selon les besoins.
+La prise en charge de la fonctionnalité Amazon EBS Elastic volumes intégrée dans un agrégat Cloud Volumes ONTAP améliore les performances et la capacité, et permet à BlueXP d'augmenter automatiquement la capacité du disque sous-jacent selon les besoins.
 
-La prise en charge des volumes Elastic est disponible à partir de la version 3.9.19 du connecteur Cloud Manager et est prise en charge avec les versions Cloud Volumes ONTAP spécifiques et les types de disques EBS spécifiques.
+La prise en charge d'Elastic volumes est disponible à partir de la version 3.9.19 du connecteur BlueXP. Elle est prise en charge avec des versions Cloud Volumes ONTAP spécifiques et des types de disques EBS spécifiques.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"^]
 
@@ -54,7 +54,7 @@ Notez ce qui suit :
 
 * L'utilisation principale d'ONTAP S3 avec Cloud Volumes ONTAP est un magasin d'objets à usage générique.
 * Pour l'instant, le protocole S3 n'est pas pris en charge par Cloud Volumes ONTAP dans Google Cloud.
-* Cloud Manager ne fournit aucune fonctionnalité de gestion pour la fonctionnalité ONTAP S3.
+* BlueXP ne propose pas de fonctions de gestion pour la fonction ONTAP S3.
 
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Découvrez comment configurer et gérer les services de stockage objet S3 dans ONTAP"^].
@@ -69,21 +69,21 @@ Lisez ces notes pour en savoir plus sur la mise à niveau vers cette version.
 
 === Comment mettre à niveau
 
-La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"^].
 
 
 
 === Chemin de mise à niveau pris en charge
 
-Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.11.0 à partir de la version 9.10.1. Cloud Manager vous invite à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers cette version.
+Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.11.0 à partir de la version 9.10.1. BlueXP vous invitera à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers cette version.
 
 
 
 === Version requise du connecteur
 
-Cloud Manager Connector doit exécuter la version 3.9.18 ou ultérieure pour mettre à niveau les systèmes existants vers la version 9.11.0.
+Le connecteur BlueXP doit exécuter la version 3.9.18 ou ultérieure pour mettre à niveau les systèmes existants vers la version 9.11.0.
 
 
 TIP: Les mises à niveau automatiques du connecteur sont activées par défaut, vous devez donc exécuter la dernière version.

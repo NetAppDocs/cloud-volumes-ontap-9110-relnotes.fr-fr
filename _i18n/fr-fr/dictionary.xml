@@ -592,8 +592,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Blog Cloud Central</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud ONTAP</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">Pour une paire HA, la capacité autorisée est-elle limitée par nœud ou par paire HA entière ?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">Dans le cas d'une paire haute disponibilité, les données en miroir sont-elles prises en compte par rapport à la limite de capacité sous licence ?</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">Les solutions de gestion automatique des ressources applicatives ne doivent pas être utilisées</block>
@@ -620,7 +618,6 @@
   <block id="5eaf873931f55b8762ee767f05a1cd4c" category="paragraph">Le connecteur BlueXP doit exécuter la version 3.9.18 ou ultérieure pour mettre à niveau les systèmes existants vers la version 9.11.0.</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">Terminaux API BlueXP</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">Non, ce n'est pas le cas. Les données d'une paire HA sont mises en miroir de manière synchrone entre les nœuds, de sorte que les données soient disponibles en cas de défaillance dans Google Cloud. Par exemple, si vous achetez un disque de 8 To sur le nœud A, BlueXP alloue également un disque de 8 To sur le nœud B utilisé pour les données en miroir. Bien que 16 To de capacité aient été provisionnés, seulement 8 To comptent par rapport à la limite de licence.</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
   <block id="12964005c5d7e3005a6efbac919f2869" category="paragraph">Si vous tirez parti<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Dans le VPC dans lequel vous déployez Cloud Volumes ONTAP, vous devez implémenter des enregistrements DNS qui transmettent le trafic au trafic requis<block ref="f6959d0a2d8478df824c26fa5d8f2e95" category="inline-link-rx"></block>.</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Pour plus d'informations sur les limites de disques, reportez-vous à la section <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">Dans AWS, un agrégat peut contenir jusqu'à 6 disques de même taille. Cependant, si vous disposez d'une configuration prenant en charge la fonctionnalité Amazon EBS Elastic volumes, un agrégat peut contenir jusqu'à 8 disques.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
@@ -662,4 +659,5 @@ Le seul SVM transmettant les données s'étend à l'ensemble du système Cloud V
   <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">Découvrez comment effectuer une mise à niveau dans AWS avec les types d'instances EC2 c4, m4 et r4</block>
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>.
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
+  <block id="635b8666b75aa41cbb414efb1a4e8850" category="sidebar">Ces notes de version décrivent les nouvelles fonctionnalités, les limites et les problèmes connus de Cloud Volumes ONTAP 9.11.</block>
 </blocks>

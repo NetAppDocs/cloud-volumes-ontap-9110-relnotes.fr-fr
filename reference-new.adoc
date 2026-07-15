@@ -20,6 +20,7 @@ D'autres fonctionnalités et améliorations sont également introduites dans les
 
 
 
+[[support-for-elastic-volumes-7-june-2022]]
 == Prise en charge d'Elastic volumes (7 juin 2022)
 
 La prise en charge de la fonctionnalité Amazon EBS Elastic volumes intégrée dans un agrégat Cloud Volumes ONTAP améliore les performances et la capacité, et permet à BlueXP d'augmenter automatiquement la capacité du disque sous-jacent selon les besoins.
@@ -30,12 +31,14 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-vol
 
 
 
+[[9-11-0-p1-2-may-2022]]
 == 9.11.0 P1 (2 mai 2022)
 
 La version Cloud Volumes ONTAP 9.11.0 P1 est désormais disponible dans AWS, Azure et Google Cloud. Cette version comprend les améliorations suivantes.
 
 
 
+[[ontap-s3-support-in-aws]]
 === Prise en charge d'ONTAP S3 dans AWS
 
 Vous pouvez désormais fournir un stockage objet S3 à partir d'Cloud Volumes ONTAP dans AWS (Microsoft Azure est déjà pris en charge). Cloud Volumes ONTAP prend en charge S3 en tant qu'option pour le stockage scale-out, en plus des protocoles classiques basés sur des fichiers tels que NFS et SMB.
@@ -51,12 +54,14 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Décou
 
 
 
+[[upgrade-notes]]
 == Notes de mise à niveau
 
 Lisez ces notes pour en savoir plus sur la mise à niveau vers cette version.
 
 
 
+[[how-to-upgrade]]
 === Comment mettre à niveau
 
 Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
@@ -65,12 +70,14 @@ http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-clou
 
 
 
+[[supported-upgrade-path]]
 === Chemin de mise à niveau pris en charge
 
 Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.11.0 à partir de la version 9.10.1. BlueXP vous invitera à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers cette version.
 
 
 
+[[required-version-of-the-connector]]
 === Version requise du connecteur
 
 Le connecteur BlueXP doit exécuter la version 3.9.18 ou ultérieure pour mettre à niveau les systèmes existants vers la version 9.11.0.
@@ -80,6 +87,7 @@ TIP: Les mises à niveau automatiques du connecteur sont activées par défaut, 
 
 
 
+[[downtime]]
 === Ou non
 
 * La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
@@ -88,6 +96,7 @@ TIP: Les mises à niveau automatiques du connecteur sont activées par défaut, 
 
 
 
+[[upgrades-in-aws-with-c4-m4-and-r4-ec2-instance-types]]
 === Mises à niveau dans AWS avec les types d'instances EC2 c4, m4 et r4
 
 Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par les nouveaux déploiements Cloud Volumes ONTAP. Si un système existant s'exécute sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5. Si vous ne pouvez pas modifier le type d'instance, vous devez activer la mise en réseau améliorée avant de procéder à la mise à niveau.

@@ -18,6 +18,7 @@ Cloud Volumes ONTAP présente des limites de configuration du stockage pour assu
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacité système maximale par licence
 
 La capacité système maximale d'un système Cloud Volumes ONTAP est déterminée par sa licence. La capacité système maximale inclut le stockage sur disque et le stockage objet utilisé pour le Tiering des données.
@@ -56,6 +57,7 @@ Non, ce n'est pas le cas. Les données d'une paire HA AWS sont mises en miroir d
 
 
 
+[[disk-and-tiering-limits-by-ec2-instance]]
 == Limites de disque et de Tiering par instance EC2
 
 Cloud Volumes ONTAP utilise les volumes EBS comme disques, avec une taille de disque maximale de 16 Tio. Les sections ci-dessous présentent les limites des disques et des niveaux par famille d'instances EC2, car de nombreux types d'instances EC2 ont des limites de disques différentes. Les limites des disques sont également différentes entre les systèmes à un seul nœud et les paires haute disponibilité.
@@ -72,6 +74,7 @@ Notez ce qui suit :
 
 
 
+[[single-node-with-a-premium-license]]
 === Un seul nœud avec une licence Premium
 
 [cols="18,18,32,32"]
@@ -90,6 +93,7 @@ Notez ce qui suit :
 
 
 
+[[single-node-with-node-based-licensing]]
 === Un seul nœud avec licence basée sur les nœuds
 
 [cols="18,18,16,16,16,16"]
@@ -111,6 +115,7 @@ Notez ce qui suit :
 
 
 
+[[single-node-with-capacity-based-licensing]]
 === Un seul nœud avec licence basée sur la capacité
 
 [cols="18,18,32,32"]
@@ -128,6 +133,7 @@ Notez ce qui suit :
 
 
 
+[[ha-pairs-with-a-premium-license]]
 === Paires HA avec une licence Premium
 
 [cols="18,18,32,32"]
@@ -146,6 +152,7 @@ Notez ce qui suit :
 
 
 
+[[ha-pairs-with-node-based-licensing]]
 === Paires HAUTE DISPONIBILITÉ avec un système de licence basé sur les nœuds
 
 [cols="18,18,16,16,16,16"]
@@ -167,6 +174,7 @@ Notez ce qui suit :
 
 
 
+[[ha-pairs-with-capacity-based-licensing]]
 === Paires HAUTE DISPONIBILITÉ avec une licence basée sur la capacité
 
 [cols="18,18,32,32"]
@@ -184,6 +192,7 @@ Notez ce qui suit :
 
 
 
+[[aggregate-limits]]
 == Restrictions agrégées
 
 Cloud Volumes ONTAP utilise les volumes EBS comme disques et les regroupe dans _aggrégats_. Les agrégats fournissent du stockage aux volumes.
@@ -222,6 +231,7 @@ Remarques :
 
 
 
+[[storage-vm-limits]]
 == Limites des machines virtuelles de stockage
 
 Certaines configurations vous permettent de créer des machines virtuelles de stockage supplémentaires pour Cloud Volumes ONTAP.
@@ -259,6 +269,7 @@ Les machines virtuelles de stockage que vous configurez pour la reprise après i
 
 
 
+[[storage-vm-limit-by-ec2-instance-type]]
 === Limite de VM de stockage par type d'instance EC2
 
 Lors de la création d'un VM de stockage supplémentaire, il est nécessaire d'allouer des adresses IP privées au port e0a. Le tableau ci-dessous identifie le nombre maximal d'adresses IP privées par interface, ainsi que le nombre d'adresses IP disponibles sur le port e0a après le déploiement de Cloud Volumes ONTAP. Le nombre d'adresses IP disponibles affecte directement le nombre maximal de VM de stockage pour cette configuration.
@@ -360,6 +371,7 @@ Comme elle nécessite une adresse IP privée, elle limite le nombre de VM de sto
 
 
 
+[[file-and-volume-limits]]
 == Limites au niveau des fichiers et des volumes
 
 [cols="22,22,56"]
@@ -395,6 +407,7 @@ Comme elle nécessite une adresse IP privée, elle limite le nombre de VM de sto
 
 
 
+[[iscsi-storage-limits]]
 == Limites de stockage iSCSI
 
 [cols="3*"]
